@@ -56,5 +56,9 @@ class Main {
         GUI.text_button(0, 0, "Reroll", function() { 
             roll();
         });
+
+        if (Input.just_pressed(Key.R) || Input.just_pressed(Key.SPACE)) {
+            roll();
+        }
     }
 }
